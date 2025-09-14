@@ -1,20 +1,76 @@
-.cell{
-    width: 100px;
-    height: 100px;
-    border: 3px solid;
-    font-size: 50px;
-    cursor: pointer;
-    box-shadow: 0 0 2px;
-    
-}
-#game{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    width: 100px;
-    margin-left:  40%;
-}
-#gameContainer{
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #gameContainer {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #333;
+    letter-spacing: 2px;
+  }
+  
+  #game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 0 auto;
+  }
+  
+  .cell {
+    background: #f0f0f0;
+    border: 2px solid #444;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .cell:hover {
+    background: #dfe6e9;
+    transform: scale(1.05);
+  }
+  
+  #statu {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  #restartbtn {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: #2193b0;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  #restartbtn:hover {
+    background: #176a80;
+  }
+  
